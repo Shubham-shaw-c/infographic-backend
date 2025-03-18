@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f4f1;
+    text-align: center;
+}
+.container {
+    width: 60%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+h1 {
+    color: #035b62;
+}
+.infographic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 30px 0;
+}
+.step {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin: 10px 0px;
+    padding: 0px;
+    border-radius: 10px;
+    text-align: centre;
+    position: relative;
+}
+.step:nth-child(odd) {
+    align-self: flex-start;
+}
+.step:nth-child(even) {
+    align-self: flex-end;
+}
+.step-number {
+    font-size: 120px;
+    font-weight:bolder;
+    color: #035b62;
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.step:nth-child(odd) .step-number {
+    right: -170px;
+}
+.step:nth-child(even) .step-number {
+    left: -170px;
+}
+strong{
+    color: #035b62;
+}
+.step-text {
+    font-size: 16px;
+    color:black;
+    background-color: none;
+}
+.timeline {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background: #035b62;
+    transform: translateX(-50%);
+}
+.line-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-right: 10px; /* Space between line-container and text */
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: #c3e6d8;
+    border: 3px solid #035b62;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    margin: 0px;
+    border-width: 10px;
+}
+
+.lines{
+    height: 8px;
+    width: 20%;
+    background-color: #035b62;
+    margin-right: 19%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.line {
+    height: 8px;
+    width: 20%;
+    background-color: #035b62;
+    margin-left: 19%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .step {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-self: center !important;
+    }
+    .step-number {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+    }
+    .timeline {
+        left: 10px;
+    }
+}
