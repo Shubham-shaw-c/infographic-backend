@@ -39,5 +39,5 @@ app.get('/screenshot', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`|| 'Server is running on http://0.0.0.0:${PORT}');
+    console.log(`Server is running on https://infographic-backend.vercel.app/${PORT}');
 });
