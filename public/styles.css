@@ -76,8 +76,8 @@ strong{
 }
 .line-container {
     display: flex;
-    align-items: center; /* Center items vertically */
-    margin-right: 10px; /* Space between line-container and text */
+    align-items: center;
+    margin-right: 10px;
 }
 
 .box {
@@ -125,22 +125,50 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px){
     .container {
-        width: 90%;
+        width: 95%;
+        padding: 15px;
     }
+    
+    h1 {
+        font-size: 24px;
+    }
+
     .step {
         width: 100%;
         flex-direction: column;
         text-align: center;
         align-self: center !important;
+        margin: 15px 0;
     }
+
     .step-number {
-        position: static;
-        transform: none;
+        font-size: 80px;
+        width: 50px;
+        height: 50px
         margin-bottom: 10px;
     }
+
     .timeline {
         left: 10px;
+        width: 4px;
+    }
+
+    .box {
+        width: 40px;
+        height: 40px;
+    }
+
+    .lines, .line {
+        width: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
     }
 }
